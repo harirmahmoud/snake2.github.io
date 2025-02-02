@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+} #alert-box {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #f1f1f1;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #e3f2fd;
+}
+.wrapper{
+    width: 65vmin;
+    height: 70vmin;
+    background-color: #293447;
+    overflow: hidden;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}.game-details{
+    color:#b8c6dc ;
+    font-size:1.2rem;
+    font-weight:500;
+    padding: 20px 27px;
+    display: flex;
+    justify-content: space-between;
+
+
+}.play-board{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template: repeat(30,1fr)/repeat(30,1fr);
+    background-color: #212837;
+}
+.play-board .food{
+    background-color: red;
+
+}.play-board .head{
+    background-color: #fff;
+}
